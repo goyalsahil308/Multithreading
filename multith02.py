@@ -1,4 +1,3 @@
-from concurrent.futures import thread
 from threading import *
 import time
 def a1():

@@ -1,17 +1,19 @@
 from threading import *
 e=Event()
+ee=Event()
 def odd():
         for i in range(1,100,2):
             print(i)
             e.wait()
+
             e.set()
 
 
 def even ():
-        e.wait()
+        ee.wait()
         for i in range(2,101,2):
             print(i)
-            e.set()
+            ee.set()
 
 
 t1=Thread(target=odd)

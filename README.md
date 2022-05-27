@@ -1,22 +1,22 @@
-#Inserting and Fetching Data into Database using Multi-threading
-##Libraries Used
-###1. threading:
+# Inserting and Fetching Data into Database using Multi-threading
+## Libraries Used
+### 1. threading:
                 1.a Events: To lock crucial parts of database to reduce race conditions
                 1.b Locks : To lock parts of program
                 1.c Currentthread().getName()  : To get name of current thread
-####2. concurrent.futures:
+#### 2. concurrent.futures:
                 ThreadPoolExecutor to handle threads introduced in python 3.2 and above
-###4. queue:
+### 4. queue:
                 FIFO type queue is used
 _________________________________________________________________________________________________________
 
-##User defined Functions:
-###a1-a4 :  Takes item from queue and print it
+## User defined Functions:
+### a1-a4 :  Takes item from queue and print it
 _________________________________________________________________________________________________________
 
-##Target: We have to print 1-100 using 4 threads 
+## Target: We have to print 1-100 using 4 threads 
 _________________________________________________________________________________________________________
-##working of code
+## working of code
 We have 4 functions a1-a4 and a queue .We have to put first 100 numbers in queue .
 Using for loop in range of 1-101 we put each number in queue using below method
                        queue.put(number) 
@@ -38,5 +38,5 @@ Now its time to call the function .For this we use concurrent.futures.
    with concurrent.futures.ThreadPoolExecutor() as ex:
         ex.submit(a1,q)
 
-This will call threads and pass argument queue as q.
+This will call threads and pass argument queue as q and hence all threads will print each number one by one and form counting from 1 to 100 
  

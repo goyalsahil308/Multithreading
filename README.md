@@ -1,4 +1,4 @@
-# Thread controlling using events and queue
+# Controlling threads using events and queue
 ## Libraries Used
 ### 1. threading:
                 1.a Events: To lock crucial parts of database to reduce race conditions
@@ -16,7 +16,7 @@ ________________________________________________________________________________
 
 ## Target: We have to print 1-100 using 4 threads 
 _________________________________________________________________________________________________________
-## working of code
+## Working of code
 We have 4 functions a1-a4 and a queue .We have to put first 100 numbers in queue .
 Using for loop in range of 1-101 we put each number in queue using below method
 

@@ -6,7 +6,7 @@
                 1.c Currentthread().getName()  : To get name of current thread
 #### 2. concurrent.futures:
                 ThreadPoolExecutor to handle threads introduced in python 3.2 and above
-### 4. queue:
+### 3. queue:
                 FIFO type queue is used
 _________________________________________________________________________________________________________
 

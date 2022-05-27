@@ -1,4 +1,4 @@
-# Inserting and Fetching Data into Database using Multi-threading
+# Thread controlling using events and queue
 ## Libraries Used
 ### 1. threading:
                 1.a Events: To lock crucial parts of database to reduce race conditions
